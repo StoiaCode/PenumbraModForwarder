@@ -1,3 +1,5 @@
+# This is a Fork that removes the Updater to keep it on the Last PMF version instead of installing Atomos. 
+
 # Penumbra Mod Forwarder
 
 Forwards `.pmp`, `.ttmp`, and `.ttmp2` files to be automatically opened by Penumbra.
