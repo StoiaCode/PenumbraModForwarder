@@ -64,11 +64,11 @@ public class SystemTrayManager : ISystemTrayManager
             mainWindow.Activate();
         });
 
-        contextMenu.Items.Add("Check For Updates", null, (sender, args) =>
+        /*contextMenu.Items.Add("Check For Updates", null, (sender, args) =>
         {
             _logger.LogInformation("Checking for updates...");
             _updateService.CheckForUpdates();
-        });
+        });*/
         
         contextMenu.Items.Add(new ToolStripSeparator());
         

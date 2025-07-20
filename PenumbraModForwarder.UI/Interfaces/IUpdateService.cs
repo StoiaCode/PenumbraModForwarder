@@ -2,5 +2,5 @@
 
 public interface IUpdateService
 {
-    public void CheckForUpdates();
+    // public void CheckForUpdates();
 }

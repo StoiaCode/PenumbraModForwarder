@@ -4,6 +4,7 @@ using Serilog;
 
 namespace PenumbraModForwarder.UI.Services;
 using AutoUpdaterDotNET;
+using System.Runtime.CompilerServices;
 
 public class UpdateService : IUpdateService
 {
@@ -14,13 +15,13 @@ public class UpdateService : IUpdateService
     {
         _logger = logger;
 
-        AutoUpdater.ApplicationExitEvent += OnApplicationExit;
+        // AutoUpdater.ApplicationExitEvent += OnApplicationExit;
         AutoUpdater.DownloadPath = Application.StartupPath;
         AutoUpdater.Synchronous = true;
         AutoUpdater.Mandatory = true;
         AutoUpdater.UpdateMode = Mode.ForcedDownload;
 
-        AutoUpdater.InstalledVersion = GetInstalledVersion();
+        // AutoUpdater.InstalledVersion = GetInstalledVersion();
     }
 
     public void CheckForUpdates()

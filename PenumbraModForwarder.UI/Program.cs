@@ -35,7 +35,7 @@ static class Program
         }
         
         IsProgramAlreadyRunning(serviceProvider);
-        CheckForUpdates(serviceProvider);
+        // CheckForUpdates(serviceProvider);
         MigrateOldConfigIfExists(serviceProvider);
         CreateStartMenuShortcut(serviceProvider);
         SetTexToolsPath(serviceProvider);
@@ -99,11 +99,11 @@ static class Program
         configurationService.MigrateOldConfig();
     }
     
-    private static void CheckForUpdates(IServiceProvider serviceProvider)
+    /*private static void CheckForUpdates(IServiceProvider serviceProvider)
     {
         var updateService = serviceProvider.GetRequiredService<IUpdateService>();
         updateService.CheckForUpdates();
-    }
+    }*/
     
     private static void CreateStartMenuShortcut(IServiceProvider serviceProvider)
     {
